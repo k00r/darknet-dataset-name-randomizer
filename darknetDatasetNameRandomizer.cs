@@ -11,8 +11,8 @@ namespace darknetDatasetNameRandomizer
     {
         static void Main()
         {
-            string datasetOldPath = "";
-            string datasetNewPath = "";
+            string datasetOldPath = "";		//your current dataset,meaning images with annotation files
+            string datasetNewPath = "";		//output,pairs will be preserved,useful for removing characters that darknet doesn't like
 			
             DirectoryInfo d = new DirectoryInfo(datasetOldPath);
             FileInfo[] images = d.GetFiles("*.jpg");
